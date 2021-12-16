@@ -19,11 +19,19 @@ body{
 }
 
 /*TODO: BS4 method, could remove & swap with data-bs-offset */
-/* .offset::before{
+ .offset::before{
     display: block;
     content: "";
-    height: 6rem;
-} */
+    height: 2rem;
+}
+
+.navbar-nav,
+.mr-auto {
+flex: 0.5;
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+}
 
 .navbar{
     font-family: 'Roboto', sans-serif;
@@ -31,18 +39,18 @@ body{
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.2rem;
-    background: var(--primary) !important;
-    padding: 20px 0;
+    background: var(--secondary) !important;
+    padding: 2px 0;
 }
 
 .navbar .nav-item .nav-link{
-    color:#fff;
-    padding-left: 20px;
+    color: var(--primary);
+    padding-left: 70px;
 }
 
 .navbar .nav-item .nav-link.active,
 .navbar .nav-item .nav-link:hover{
-    color: var(--secondary);
+    color: rgb(0, 0, 0);
 }
 
 /* TODO: 
@@ -53,8 +61,8 @@ body{
     width: 100%;
     height: 100vh;
     max-width: 100%;
-    background: rgb(9,9,121);
-    background: radial-gradient(circle, rgba(9,9,121,1) 31%, rgba(190,206,229,1) 61%, rgba(2,0,36,1) 88%);
+    background: rgb(47,79,79);
+background: linear-gradient(0deg, rgba(47,79,79,1) 19%, rgba(217,223,221,1) 100%);
 }
 
 .heading-content h5{
@@ -73,31 +81,43 @@ body{
 }
 
 /* ----------------ABOUT START------------- */
-#about .btn{
-    border: 2px solid transparent;
-    width: 40%;
-    padding: 15px 22px;
-    background:var(--primary);
+
+ .btn{
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    background:var(--secondary);
     border-radius: 5px;
     margin-top: 10px;
 }
 
-#about .btn a{
-    color: rgb(0, 0, 0);
+ .btn a{
+    color: #fff;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-#about .btn:hover{
-    border: 2px solid var(--secondary);
+ .btn:hover{
+    background: var(--primary);
     cursor: pointer;
 }
 
-/* ----------------SERVICE START------------- */
+#about img{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
 
-#services .btn{
+/* ----------------PROJECT START------------- */
+
+.card-img-top{
+    width:100%;
+    height:100%;
+}
+
+
+/* #projects .btn{
     border: 2px solid transparent;
     width: 100%;
     padding: 15px 22px;
@@ -106,7 +126,7 @@ body{
     margin-top: 10px;
 }
 
-#services .btn a{
+#projects .btn a{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1em;
@@ -114,16 +134,17 @@ body{
     text-transform: uppercase;
 }
 
-#services .btn:hover{
+#projects .btn:hover{
     border: 2px solid var(--secondary);
     cursor: pointer;
-}
+} */
 
 
-/* ----------------SERVICE END------------- */
+
+/* ----------------PROJECT END------------- */
 
 /* ----------------NEWSLETTER START------------- */
-.newsletter{
+#newsletter{
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -132,38 +153,76 @@ body{
    background: var(--primary);
 }
 
-.newsletter h2{
+#newsletter h2{
     font-family: var(--roboto);
     font-weight: bold;
     letter-spacing: 3px;
     line-height: 50px;
 }
 
-.newsletter p{
+#newsletter p{
     font-family: var(--roboto);
     font-weight: 400;
 }
 
-.newsletter .btn{
+#newsletter input{
+    font-size: 15px;
+}
+/* #newsletter .btn{
     border: 2px solid transparent;
     background:var(--secondary);
     border-radius: 5px;
     height:55px;
 }
 
-.newsletter .btn a{
+#newsletter .btn a{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.newsletter .btn:hover{
+#newsletter .btn:hover{
     border: 2px solid white;
     cursor: pointer;
-}
+    color: var(--primary);
+} */
 
 /* ----------------NEWSLETTER END------------- */
+/* ----------------Contact start------------- */
+
+/* ----------------Contact END------------- */
+
+
+
+/* ----------------FOOTER START------------- */
+#footer{
+padding: 0 !important;
+margin: 0 !important;
+}
+
+#footer .btn{
+    width: auto;
+    border: 2px solid transparent;
+    background:var(--secondary);
+    border-radius: 5px;
+    height:55px;
+}
+
+#footer .btn a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#footer .btn:hover{
+    border: 2px solid white;
+    cursor: pointer;
+    color: var(--primary);
+}
+/* ----------------FOOTER END------------- */
+
 
 
 /* --------------- Media Query---------------- */
@@ -184,6 +243,16 @@ body{
     
     .heading-content p{
         font-size: 0.9em;
+    }
+
+     img{
+        height: 575px;
+    }
+     h2,h3{
+        font-size: 1.5em;
+    }
+     p{
+        font-size: 0.75em;
     }
 }
 
@@ -208,5 +277,9 @@ body{
 
     #contact .post-heading h3{
         font-size: 2em;
+    }
+
+    #newsletter input{
+        font-size: 0.7em;
     }
 }
