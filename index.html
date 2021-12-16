@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will4u</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+
+  </head>
+  <!-- TODO: data-bs-offset & remove offset class **doesnt seem neccessary** -->
+  <body data-bs-spy="scroll" data-bs-target="#navbarResponsive">
+
+    <!--------------------- START NAVBAR -------------------------------->
+  
+     <nav class="navbar navbar-dark navbar-expand-md text-uppercase ">
+      <div class="container-fluid d-flex justify-content-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--------------------- END NAVBAR -------------------------->
+
+    <!---------------------  START BACKGROUND -------------------------------->
+
+    <!-- FIXME: new image, if time adjust current background -->
+    <!-- <div class="background">
+      <img src="./img/Will.png" class="img-fluid" style="width: 100%" />
+    </div> -->
+
+    <div class="heading-content text-center d-flex flex-column justify-content-center">
+      <h5>hey, I'm</h5>
+      <h1>Will Christensen</h1>
+    </div>
+
+    <!---------------------  end background -------------------------------->
+
+    <!--------------------- start About me -------------------------------->
+    <div id="about" class="offset container mt-5 mb-5 ">
+      <div class="post-heading text-center">
+        <h3 class="display-4 font-weight-bold">About Me</h3>
+        <hr class="w-50 mx-auto pb-2 mb-5" />
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 pt-4">
+          <!-- FIXME: new img, might need bottom padding -->
+          <img src="./img/4u.png" class="img-fluid w-100" />
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12">
+          <h2>Let Me Introduce Myself</h2>
+          <hr class="w-100 mx-auto mt-1 mb-4" />
+          <p>
+            I am a Cal Poly graduate with a degree in agricultural business. I discovered my passion for web development after college and find all areas of the internet to be fascinating. 
+          </p>
+          <!-- TODO: links to actual resume/cv? -->
+          <div class="about-buttons d-flex mb-5">
+            <button class="btn w-50 m-2">
+              <a href="#">Resume</a>
+            </button>
+            <button class="btn w-50 m-2">
+              <a href="#">CV</a>
+            </button>
+          </div>
+      </div>
+    </div>
+
+    <!-- FIXME: space btwn sections other than br-->
+    <br>
+    <br>
+
+
+    <!---------------------  end about me -------------------------------->
+    <!--------------------- Start Service -------------------------------->
+
+    <div id="services" class="offset container mt-5 mb-5">
+      <div class="post-heading text-center">
+        <h3 class="display-4 font-weight-bold">Service</h3>
+        <!---------------- TODO: change color & size of hr -------------->
+        <hr class="w-50 mx-auto pb-2 mb-5" />
+      </div>
+      <!--------------- FIXME: images ---------------->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 pb-5">
+          <div class="card">
+            <img src="./img/Will.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Business Website</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-dark">Live Preview</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 pb-5">
+          <div class="card">
+            <img src="./img/Will.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Personal Website</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-dark">Live Preview</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 pb-5">
+          <div class="card">
+            <img src="./img/Will.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Blog Website</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-dark">Live Preview</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 pb-5">
+          <div class="card">
+            <img src="./img/Will.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Business Website</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-dark">Live Preview</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 pb-5">
+          <div class="card">
+            <img src="./img/Will.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Personal Website</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-dark">Live Preview</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 pb-5">
+          <div class="card">
+            <img src="./img/Will.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Business Website</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-dark">Live Preview</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn w-50 mx-auto mb-5">
+          <a href="#">Know More</a>
+        </button>
+      </div>
+    </div>
+
+    <!--------------------- End SERVICE -------------------------------->
+
+    <!--------------------- Start NEWSLETTER -------------------------------->
+    <!-- TODO: add animation or hover -->
+    <section class="newsletter container-fluid mt-5 pb-5">
+      <h2 class="mt-5">Newsletter</h2>
+      <p>Subscribe to my newsletter to recieve news.</p>
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group d-flex align-items-center justify-content-center">
+          <input
+            type="email"
+            class="form-control"
+            id="inlineFormEmail"
+            placeholder="Enter Email"
+            style="display: inline-block; width: 50% !important"
+          />
+          <button type="submit" class="btn btn-dark m-2">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!--------------------- END NEWSLETTER -------------------------------->
+
+    <!--------------------- START CONTACT -------------------------------->
+    <!-- TODO: make fancy / animated -->
+    <div id="contact" class="offset w-50 mx-auto mt-5 mb-5">
+      <div class="post-heading text-center">
+        <h3 class="display-4 font-weight-bold">Contact Me</h3>
+        <hr class="w-50 mx-auto pb-2 mb-5" />
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputFullName">Full Name: </label>
+          <input
+            type="FullName"
+            class="form-control"
+            id="exampleInputFullName"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputMessage">Your Message: </label>
+          <textarea class="form-control"></textarea>
+        </div>
+        <div class="text-center mt-2">
+          <button type="submit" class="btn btn-dark w-50">Send it!</button>
+        </div>
+      </form>
+    </div>
+
+    <!--------------------- end CONTACT -------------------------------->
+
+    <!--------------------- START FOOTER -------------------------------->
+    <!-- TODO: working links -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- END Section: Social media -->
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="https://github.com/willmchristensen"
+          >My Github</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!--------------------- END FOOTER -------------------------------->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- FONTAWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/657a3bd6f8.js" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,212 @@
+/* LORA FONT */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
+
+/* ROBOTO FONT */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
+
+@import url(./var/global.css);
+/* TODO: 
+    -change color scheme of site  
+    -fancy buttons
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family:'Lora', serif;
+}
+
+/*TODO: BS4 method, could remove & swap with data-bs-offset */
+/* .offset::before{
+    display: block;
+    content: "";
+    height: 6rem;
+} */
+
+.navbar{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: var(--primary) !important;
+    padding: 20px 0;
+}
+
+.navbar .nav-item .nav-link{
+    color:#fff;
+    padding-left: 20px;
+}
+
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:hover{
+    color: var(--secondary);
+}
+
+/* TODO: 
+    -super responsive - all screen sizes 
+    -might need to change top value below, originally 40%
+    */
+.heading-content{
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    background: rgb(9,9,121);
+    background: radial-gradient(circle, rgba(9,9,121,1) 31%, rgba(190,206,229,1) 61%, rgba(2,0,36,1) 88%);
+}
+
+.heading-content h5{
+    font-size: 4em;
+    font-weight:300;
+    color: #fff;
+    font-family: var(--roboto);
+}
+
+.heading-content h1{
+    font-size: 5em;
+    font-weight:bolder;
+    color: #fff;
+    font-family: var(--roboto);
+    letter-spacing: 2px;
+}
+
+/* ----------------ABOUT START------------- */
+#about .btn{
+    border: 2px solid transparent;
+    width: 40%;
+    padding: 15px 22px;
+    background:var(--primary);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#about .btn a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about .btn:hover{
+    border: 2px solid var(--secondary);
+    cursor: pointer;
+}
+
+/* ----------------SERVICE START------------- */
+
+#services .btn{
+    border: 2px solid transparent;
+    width: 100%;
+    padding: 15px 22px;
+    background:var(--primary);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#services .btn a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#services .btn:hover{
+    border: 2px solid var(--secondary);
+    cursor: pointer;
+}
+
+
+/* ----------------SERVICE END------------- */
+
+/* ----------------NEWSLETTER START------------- */
+.newsletter{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background: var(--primary);
+}
+
+.newsletter h2{
+    font-family: var(--roboto);
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.newsletter p{
+    font-family: var(--roboto);
+    font-weight: 400;
+}
+
+.newsletter .btn{
+    border: 2px solid transparent;
+    background:var(--secondary);
+    border-radius: 5px;
+    height:55px;
+}
+
+.newsletter .btn a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.newsletter .btn:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* ----------------NEWSLETTER END------------- */
+
+
+/* --------------- Media Query---------------- */
+@media screen and (max-width: 767px) {
+    /* tablets */
+    .navbar{
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+
+    .heading-content h5{
+        font-size: 3em;
+    }
+    
+    .heading-content h1{
+        font-size: 3em;
+    }
+    
+    .heading-content p{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 479px){
+    /* smartphones */
+    .navbar{
+        letter-spacing: 0.1rem;
+        padding: 7px 0;
+    }
+
+    .heading-content h5{
+        font-size: 2em;
+    }
+    
+    .heading-content h1{
+        font-size: 2em;
+    }
+    
+    .heading-content p{
+        font-size: 0.7em;
+    }
+
+    #contact .post-heading h3{
+        font-size: 2em;
+    }
+}
